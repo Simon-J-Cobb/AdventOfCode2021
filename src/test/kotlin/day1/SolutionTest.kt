@@ -9,7 +9,7 @@ class SolutionTest {
 
     @Test
     fun solution1Test(){
-        assertEquals(7,Solution().solution1(depths))
+        assertEquals(7, Solution().solution1(depths))
 
     }
 
