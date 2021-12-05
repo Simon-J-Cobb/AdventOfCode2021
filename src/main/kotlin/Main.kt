@@ -1,5 +1,5 @@
 import day1.Solution
 
 fun main() {
-    Solution().solution1()
+    print(Solution().solution1())
 }

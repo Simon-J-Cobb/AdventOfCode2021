@@ -7,7 +7,11 @@ class Solution {
         ReadFile()
         val depths = ReadFile().readFileInAsList("src/main/resources/Day1/Question1")
         var count = 0
-        val depthsIterator = depths.listIterator()
+        depths.windowed(2).forEach {
+            if(it[0] < it[1])
+                count += 1
+
+        }
         return count
 
     }
