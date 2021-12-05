@@ -7,7 +7,7 @@ class SolutionTest {
 
     @Test
     fun solution1Test(){
-        assertEquals(7,Solution().solution1())
+        assertEquals(7,Solution().solution1("src/test/resources/day1/Question1"))
 
     }
 }

@@ -3,9 +3,9 @@ package day1
 import ReadFile
 
 class Solution {
-    fun solution1(): Int {
+    fun solution1(filePath: String): Int {
         ReadFile()
-        val depths = ReadFile().readFileInAsList("src/main/resources/Day1/Question1")
+        val depths = ReadFile().readFileInAsListofNumbers(filePath)
         var count = 0
         depths.windowed(2).forEach {
             if(it[0] < it[1])
