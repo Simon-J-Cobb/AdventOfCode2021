@@ -1,4 +1,4 @@
-import Day1.Solution
+import day1.Solution
 
 fun main() {
     Solution().solution1()
