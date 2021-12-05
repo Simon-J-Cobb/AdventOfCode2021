@@ -13,4 +13,11 @@ class SolutionTest {
         assertEquals(150, Solution().solution1(instructions))
 
     }
+
+
+    @Test
+    fun solution2Test() {
+        assertEquals(900, Solution().solution2(instructions))
+
+    }
 }
