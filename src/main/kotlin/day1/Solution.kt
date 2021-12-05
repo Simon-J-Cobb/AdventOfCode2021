@@ -13,7 +13,11 @@ class Solution() {
 
     }
 
+    fun sumWindow(depths: List<Int>):List<Int>{
+        return depths.windowed(3).map { it.sum() }
+    }
+
     fun solution2(depths: List<Int>): Int {
-        return 0
+        return solution1(sumWindow(depths))
     }
 }
