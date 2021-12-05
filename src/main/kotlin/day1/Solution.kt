@@ -1,11 +1,8 @@
 package day1
 
-import ReadFile
+class Solution() {
 
-class Solution {
-    fun solution1(filePath: String): Int {
-        ReadFile()
-        val depths = ReadFile().readFileInAsListofNumbers(filePath)
+    fun solution1(depths: List<Int>): Int {
         var count = 0
         depths.windowed(2).forEach {
             if(it[0] < it[1])
@@ -14,5 +11,9 @@ class Solution {
         }
         return count
 
+    }
+
+    fun solution2(depths: List<Int>): Int {
+        return 0
     }
 }
