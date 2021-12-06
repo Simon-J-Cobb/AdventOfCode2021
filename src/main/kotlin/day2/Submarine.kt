@@ -6,34 +6,18 @@ class Submarine {
     var aim: Int = 0
 
     fun move(instruction: Pair<String, Int>){
-        if(instruction.first == "forward"){
-            horizontal += instruction.second
-        }
-        else if(instruction.first == "down"){
-            depth += instruction.second
-        }
-        else if(instruction.first == "up"){
-            depth -= instruction.second
-        }
-        else{
-        }
+        when(instruction.first){
+            "forward" -> {horizontal += instruction.second}
+            "down" ->{depth += instruction.second}
+            "up"->{depth -= instruction.second}
+    }
     }
 
     fun moveWithAim(instruction: Pair<String, Int>){
-        if(instruction.first == "forward"){
-            horizontal += instruction.second
-            depth +=  instruction.second * aim
-        }
-        else if(instruction.first == "down"){
-            aim += instruction.second
-        }
-        else if(instruction.first == "up"){
-            aim -= instruction.second
-        }
-        else{
-        }
-    }
-
-
+        when(instruction.first){
+            "forward" -> {horizontal += instruction.second;depth +=  instruction.second * aim}
+            "down" ->{aim += instruction.second}
+            "up"->{aim -= instruction.second}
+    }}
 
 }
