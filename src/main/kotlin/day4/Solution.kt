@@ -12,4 +12,18 @@ class Solution {
         }
         return 0
     }
+
+    fun solution2(game: ReadFileBingo): Int{
+        for(number in game.numbers){
+            for(board in game.boards){
+                if(board.won){
+                    continue
+                }
+                var score = board.call(number)
+                if(game.boards.none { !it.won })
+                {return score}
+            }
+        }
+        return 0
+    }
 }

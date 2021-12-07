@@ -3,6 +3,7 @@ package day4
 class Bingo(numbers: List<List<Int>>) {
 
     var Grid = toBingoGrid(numbers)
+    var won = false
 
     private fun toBingoRow(row: List<Int>): List<BingoSquare>{
         return row.map{BingoSquare(it)}
@@ -18,6 +19,7 @@ class Bingo(numbers: List<List<Int>>) {
                 item.call(number)
             }
         if(winCheck()){
+            won = true
             return sumOfUnCalled() * number
         }
         return 0

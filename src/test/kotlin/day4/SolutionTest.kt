@@ -1,6 +1,5 @@
 package day4
 
-import day4.Solution
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
@@ -11,6 +10,12 @@ class SolutionTest {
     @Test
     fun solution1Test() {
         assertEquals(4512, Solution().solution1(file))
+
+    }
+
+    @Test
+    fun solution2Test() {
+        assertEquals(1924, Solution().solution2(file))
 
     }
 }

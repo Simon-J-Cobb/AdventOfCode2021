@@ -12,4 +12,6 @@ fun main() {
     println(day3.Solution().solution2(matrix))
     var file = ReadFileBingo("src/main/resources/day4/Question1")
     println(day4.Solution().solution1(file))
+    println(day4.Solution().solution2(file))
+
 }
