@@ -18,7 +18,13 @@ class SolutionTest {
 
     @Test
     fun solution1Test() {
-        assertEquals(198, Solution().Solution(matrix))
+        assertEquals(198, Solution().solution1(matrix))
+
+    }
+
+    @Test
+    fun solution2Test() {
+        assertEquals(230, Solution().solution2(matrix))
 
     }
 }
