@@ -2,6 +2,7 @@ package day5
 
 import day4.Bingo
 import java.io.File
+import kotlin.math.max
 
 class Solution {
 
@@ -11,11 +12,21 @@ class Solution {
     }
 
     public fun solution1(coordinates : List<Grid.CoordinatePair>): Int{
-        var grid = Grid(10,10)
+        max(coordinates.maxOf { it.x1 },coordinates.maxOf { it.x2 })
+        var grid = Grid(max(coordinates.maxOf { it.x1 },coordinates.maxOf { it.x2 }) + 1,max(coordinates.maxOf { it.y1 },coordinates.maxOf { it.y2 }) + 1)
         for(coord in coordinates){
             grid.drawLine(coord)
         }
-        print(grid.grid)
+        return grid.danger()
+    }
+
+    public fun solution2(coordinates : List<Grid.CoordinatePair>): Int{
+        max(coordinates.maxOf { it.x1 },coordinates.maxOf { it.x2 })
+        var grid = Grid(max(coordinates.maxOf { it.x1 },coordinates.maxOf { it.x2 }) + 1,max(coordinates.maxOf { it.y1 },coordinates.maxOf { it.y2 }) + 1)
+        for(coord in coordinates){
+            grid.drawLine(coord)
+            grid.drawLineDiag(coord)
+        }
         return grid.danger()
     }
 

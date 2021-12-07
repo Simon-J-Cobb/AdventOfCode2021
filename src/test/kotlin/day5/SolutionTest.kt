@@ -13,4 +13,10 @@ class SolutionTest {
         assertEquals(5, Solution().solution1(coordinates))
 
     }
+
+    @Test
+    fun solution2Test() {
+        assertEquals(12, Solution().solution2(coordinates))
+
+    }
 }

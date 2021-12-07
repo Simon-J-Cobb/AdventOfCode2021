@@ -1,4 +1,5 @@
 import day4.ReadFileBingo
+import day5.Solution
 
 fun main() {
     val depths: List<Int> = ReadFile().readFileInAsListofNumbers("src/main/resources/day1/Question1")
@@ -13,5 +14,9 @@ fun main() {
     var file = ReadFileBingo("src/main/resources/day4/Question1")
     println(day4.Solution().solution1(file))
     println(day4.Solution().solution2(file))
+    var coordinates = day5.Solution().readInCoordinates("src/main/resources/day5/Question1")
+    println(day5.Solution().solution1(coordinates))
+    println(day5.Solution().solution2(coordinates))
+
 
 }
