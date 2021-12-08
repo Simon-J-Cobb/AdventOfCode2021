@@ -14,4 +14,16 @@ class SolutionTest {
 
     }
 
+    @Test
+    fun solution1TestWithSwarm2() {
+        assertEquals(5934, Solution().solution1WithSwarm2(fish))
+
+    }
+
+    @Test
+    fun solution2Test() {
+        assertEquals(26984457539, Solution().solution2(fish))
+
+    }
+
 }

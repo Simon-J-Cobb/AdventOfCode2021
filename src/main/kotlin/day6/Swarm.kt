@@ -20,8 +20,8 @@ class Swarm(fish: List<Int>) {
         }
     }
 
-    fun size():Int{
-        return fish.size
+    fun size():Long{
+        return fish.size.toLong()
     }
 
     fun toList():List<Int>{

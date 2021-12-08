@@ -9,9 +9,23 @@ class Solution {
         return File(path).readLines()[0].split(",").map { it.toInt() }
     }
 
-    fun solution1(fishes: List<Int>):Int{
+    fun solution1(fishes: List<Int>):Long{
         var swarm = Swarm(fishes)
         swarm.day(80)
+        return swarm.size()
+
+    }
+
+    fun solution1WithSwarm2(fishes: List<Int>):Long{
+        var swarm = Swarm2(fishes)
+        swarm.day(80)
+        return swarm.size()
+
+    }
+
+    fun solution2(fishes: List<Int>):Long{
+        var swarm = Swarm2(fishes)
+        swarm.day(256)
         return swarm.size()
 
     }
