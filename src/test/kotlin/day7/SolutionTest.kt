@@ -14,4 +14,10 @@ class SolutionTest {
 
         assertEquals(37, Solution().solution1(numbers))
     }
+
+    @Test
+    fun solution2Test(){
+
+        assertEquals(168, Solution().solution2(numbers))
+    }
 }
