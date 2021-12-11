@@ -19,5 +19,6 @@ fun main() {
     println(day5.Solution().solution2(coordinates))
     var fish = day6.Solution().readInFish("src/main/resources/day6/Question1")
     println(day6.Solution().solution1(fish))
+    println(day6.Solution().solution2(fish))
 
 }
