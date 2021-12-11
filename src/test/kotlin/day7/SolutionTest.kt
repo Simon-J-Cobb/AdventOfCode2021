@@ -12,6 +12,6 @@ class SolutionTest {
     @Test
     fun solution1Test(){
 
-        assertEquals(37, Solution().Solution1(numbers))
+        assertEquals(37, Solution().solution1(numbers))
     }
 }
