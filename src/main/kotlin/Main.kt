@@ -21,6 +21,7 @@ fun main() {
     println(day6.Solution().solution2(fish))
     var numbers = day7.Solution().readFileInAsListOfNumbers("src/main/resources/day7/Question1")
     println(day7.Solution().solution1(numbers))
+    println(day7.Solution().solution2(numbers))
 
 
 
